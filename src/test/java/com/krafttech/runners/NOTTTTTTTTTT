@@ -1,0 +1,16 @@
+@RunWith annotation bir JUnit annotationıdır.
+ Cucumber classı Cucumber.api.junit package içerisindedir ve
+ @RunWith annotationı Cucumber classı kullanarak koşar.
+
+@CucumberOptions
+
+Cucumber feature fileda bulunan bazı önemli bilgilerin koşum için kullanıldığı annotationdır.
+ cucumber.api.CucumberOptions‘dan import edilir.
+
+***Java bizim projemiz üzerinde feature dosyalarının yolunu
+ ve bağlı oldukları step definition yolunu bilmek zorundadır.
+
+---  İşte Java’nın bu görevini burada CucumberOptions annotation gerçekleştiriyor.
+   @CucumberOptions iki paremetreye sahiptir.
+   --İlk parametresi olan feature ile run edilmek istenen feature dosyasının yolu(path) gösterilir.
+   --Glue parametresi ile de step definition dosyasının yolunu gösteririz.

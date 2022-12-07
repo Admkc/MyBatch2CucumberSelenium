@@ -1,0 +1,84 @@
+ Cucumber
+
+***Düz metin olarak yazılan test senaryolarını otomatize testlere dönüştüren bir tool.
+Cucumber, Behaviour Driven Development (BDD) süreçlerini temel alır. Test yazımı oldukça basittir.
+
+Behaviour Driven Development (BDD)  yaklaşımı için kullanılmakta olan açık kaynak kodlu bir kütüphanedir.
+
+TDD — BDD YAKLAŞIMI NEDİR?
+
+TDD YAKLAŞIMI
+TDD (Test Driven Development) , Kent Back tarafından Extreme Programming’in bir parçası olarak bulunmuş bir programlama tekniğidir.
+***Bu teknik, kod yazılmadan önce test senaryolarının  belirlenmesi ve bu senaryolara bağlı kalınarak kodun yazılması
+ ve Refactor(yeniden düzenleme) edilmesini desteklemektedir.
+  Bu yöntem aslında basit ve kısa adımlarla önceden tasarlanmış senaryoları hızlı bir şekilde koda dökmeyi hedeflemektedir.
+TDD yaklaşımda 3 adım mevcuttur. Bunlar;
+• Red
+• Green
+• Refactor
+
+***Red adımında önceden yazılmış test senaryosu baz alınarak bir test scripti yazılmakta ve bu script çalıştırılarak
+testin fail bitmesi sağlanmaktadır. Zaten testin başarılı bitmesine sağlayacak yazılım yapılmadığı için test her halükarda
+fail bitecektir.
+
+***Green adımında, fail biten testin başarılı bitmesini sağlayacak kodlar yazılır ve
+test tekrar çalıştırılarak başarılı bitmesi sağlanır.
+Burada dikkat edilmesi gereken testin başarılı bitmesi sağlanırken ihtiyaçlarının göz ardı edilmemesidir.
+
+Refactor adımında ise, başarılı biten testin sonrasında yazılmış olan kodda iyileştirmelerin yapıldığı adımdır.
+Burada gereksiz, tekrar eden kodlardan arınarak daha kaliteli kod yazımı hedeflenmiştir.
+Bu 3 adım her test senaryosu için tekrar ederek ilerlemektedir.
+
+TDD’nin Avantajları :
+• Her test senaryosu için bu döngü tekrarlanacağından kodlar arasındaki bağımlılık normal yazılım geliştirme sürecine göre
+azalmakta. Bu nedenle yeni bir kod parçası eklendiğinde mevcut kodlarda bozulma olasılığı düşmektedir.
+• Daha hızlı bir yazılım geliştirme sağlar.
+• Refactor adımında gereksiz ve tekrar eden kodlardan arındığımız için daha kaliteli kod yazılmasını sağlar.
+• Test ve yazılım süreci birlikte aktığı için hatalar daha çabuk tespit edilir.
+
+BDD YAKLAŞIMI
+
+BDD yaklaşımı ilk olarak 2009 yılında Dan North tarafından ortaya atılmıştır.
+Açılımı Behavior Driven Development olan BDD, TDD yaklaşımının karmaşıklığını gidermek amacıyla ortaya çıkmıştır.
+Yazılım süreçlerinin daha test odaklı gitmesini sağlayan bir yaklaşımdır.
+TDD yaklaşımında olduğu gibi burada da yazılım geliştirmeye başlamadan önce test senaryolarının yazılması desteklenmektedir.
+
+***Test güdümlü geliştirmeden (TDD) farkı bir sistemin davranışlarını projenin tüm paydaşlarının anlayabileceği
+günlük konuşma dili şeklinde yazılmasıdır.
+Böylece karmaşık test kodlarının tüm paydaşlar tarafından anlaşılmasını kolaylaştıracaktır.
+
+***BDD’nin en güzel yanlarından biri konuşma dilinde test senaryoları yazmamıza olanak sağlamasıdır.
+İş analistleri müşteri ile yaptığı görüşmeler sonrasında ihtiyacı anlayarak user storyler oluşturmakta ve
+oluşturulan bu user storyler üzerinden de test senaryoları hazırlanarak koda dökülmektedir.
+
+Kısacası müşterinin ihtiyacı konuşma dilinde koda döküldüğü için
+müşteri ile ortak bir dilde buluşmaya olanak sağlayan bir yaklaşımdır aslında.
+
+Kolay bir yazım yöntemi olmasıyla birlikte “Given”, “When”, ”Then” olarak 3 başlıkta senaryolar kurulmaktadır.
+BDD’nin Avantajları :
+• İşbirliğini arttırır ve geliştirir. Konuşma dilinde test senaryoları yazıldığı için
+ekibe yeni katılan üyeler sürece çok çabuk adapte olabilir ve davranışsal senaryolar yazabilirler.
+• Kodun kalitesini artırarak temelde bakım maliyetini düşürür ve proje riskleri en aza indirilir.
+• Müşterinin ihtiyacına yönelik belirlenen user storyler aracılığıyla test senaryoları oluşturulup
+koda döküldüğü için belirlenen ihtiyaçlar daha iyi karşılanmaktadır.
+• Geliştiriciler işleyişi daha iyi öngörebildikleri için yazdıkları koda daha fazla güvenirler.
+
+**********************************************************************************************************************
+
+- Davranışları yazabilmek için basit bir kaç anahtar kelimesi ve formatı olan Gherkin adında bir dil kullanılmaktadır.
+ Bu dilin en büyük artısı günlük bir dil kullanılarak yazıldığı için okuyan herkes tarafından kolaylıkla anlaşılabilir olmasıdır.
+
+Gherkin
+Projelerimizde her bir davranış için .feature uzantılı bir Gherkin dosyası oluşturulur.
+Bu feature dosyasına ilgili özelliğin farklı durumlardaki davranışları tanımlanır.
+
+Given anahtar kelimesi ile ön koşul yani BASLANGIÇ durumu tanımlanır,
+When anahtar kelimesi ile OLAY,
+Then anahtar kelimesi ile SONUÇ tanımlanır.
+
+Given-When-Then adımları ile Scenario oluşturulur.
+
+
+IntelliJ IDEA’da Maven projesi oluşturdum ve Selenium WebDriver, Cucumber ve JUnit kütüphanelerine
+ait maven repositorylerini pom.xml’e ekledim.
+
