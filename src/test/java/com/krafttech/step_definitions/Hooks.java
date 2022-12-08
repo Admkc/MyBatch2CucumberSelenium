@@ -10,38 +10,43 @@ import org.openqa.selenium.TakesScreenshot;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
-
     /**
-     specifik olarak featura baglı degil
-     testlerde kulalanacagımız after before
-     */
+     * Senaryolara “hooks” denilen yöntemler ile öncesinde/sonrasında çalışacak kodlar ekleyebiliyorsunuz.
+     TDD’deki setup/teardown veya @Before/@After olarak işaretlenmiş methodlar gibi.
 
+     */
     @Before
     public void setUp(){
-        System.out.println("This is coming from before Method");
+        System.out.println("\tThis is coming from Before Method");
+
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Driver.get().manage().window().maximize();
 
     }
+
+
+
     @After
-    public void tearDown(Scenario scenario) {
-        System.out.println("This is coming from After Method");
+    public void tearDown(Scenario scenario){
+        System.out.println("\tThis is coming from After Method");
+
         if(scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");
         }
 
         Driver.closeDriver();
-
     }
-    @Before("@db")  //db tag in oldugu seneryoyu calıstırır
+
+    @Before("@db")
     public void setUpDb(){
-        System.out.println("Connection DB");
-
+        System.out.println("\t Connecting DB");
     }
+
     @After("@db")
-    public void teardownDb(){
-        System.out.println("Disconnection DB");
-
+    public void tearDownDb(){
+        System.out.println("\t Disconnecting DB");
     }
+
+
 }

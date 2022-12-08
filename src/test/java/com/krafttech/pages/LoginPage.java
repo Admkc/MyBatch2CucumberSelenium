@@ -1,11 +1,10 @@
 package com.krafttech.pages;
 
 import com.krafttech.utilities.ConfigurationReader;
-import com.krafttech.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPages extends BasePage{
+public class LoginPage extends BasePage{
 
 //    public  LoginPages() {
 //

@@ -18,6 +18,13 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.get(),this);
     }
 
+    public void naviagateToTab(String tabName){
+        driver=Driver.get();
+        driver.findElement(By.xpath("//nav//span[.='"+tabName+"']")).click();
+
+    }
+
+
 
     public void navigateToModule(String tab, String module){
 

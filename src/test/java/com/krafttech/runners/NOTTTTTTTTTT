@@ -12,5 +12,16 @@ Cucumber feature fileda bulunan bazı önemli bilgilerin koşum için kullanıld
 
 ---  İşte Java’nın bu görevini burada CucumberOptions annotation gerçekleştiriyor.
    @CucumberOptions iki paremetreye sahiptir.
-   --İlk parametresi olan feature ile run edilmek istenen feature dosyasının yolu(path) gösterilir.
+   --İlk parametresi olan feature ile RUN edilmek istenen feature dosyasının yolu(path) gösterilir.
    --Glue parametresi ile de step definition dosyasının yolunu gösteririz.
+
+***cucumber da    REPORT
+
+Cukes Runner icinde "json:target/cucumber.json dan" plugini
+ve
+pom xlm e indirdigimiz 2 tane pluginden raporumuzu olusturuyoruz.
+Maven dan lifecyle dan verify ederek testimizi calisririyoruz ve
+raporumuz target altında olusuyor.
+
+
+

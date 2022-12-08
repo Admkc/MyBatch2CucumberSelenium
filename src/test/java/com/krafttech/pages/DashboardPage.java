@@ -46,6 +46,9 @@ public class DashboardPage extends BasePage {
 
 
 
+
+
+
        public String DashboardPageTitle(String title){
 
             String Title=dashboardPageTitle.getText();
@@ -69,5 +72,9 @@ public class DashboardPage extends BasePage {
         BrowserUtils.waitForVisibility(getUserName,5);
 
         return getUserName.getText();
+    }
+    public String getHomeName(String homeName){
+        BrowserUtils.waitFor(1);
+        return Driver.get().findElement(By.xpath("//li[text()='"+homeName+"']")).getText();
     }
 }

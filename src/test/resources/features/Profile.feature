@@ -1,11 +1,8 @@
-
 Feature: Profile Tests
-
   Background:
     Given User should be on the login page
 
   Scenario: User should be able to edit profile
-
     When User should input login information
     And User should go to My Profile
     And User should navigate to "Edit Profile"
@@ -20,8 +17,6 @@ Feature: Profile Tests
       | Forms      |
       | JavaScript |
       | My Profile |
-
-
 
 
 
