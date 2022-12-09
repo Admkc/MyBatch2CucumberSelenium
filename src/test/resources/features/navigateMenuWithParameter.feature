@@ -1,13 +1,13 @@
 
 Feature: Navigate to menu with parameter
-
-  Scenario: Harun navigates to edit profile mneu
+@rerun
+  Scenario: Harun navigates to edit profile menu
     Given User should be on the login page
     When User should input "mike@gmail.com" and "mike1234"
     Then The user name should be "Harun"
     When The user navigates to "Edit Profile" menu
-    Then he user should be able to see hame name as "Edit User Profile"
-
+    Then The user name should be "Edit User Profile"
+  @rerun
   Scenario: Eddie Murphy navigates to Developers menu
     Given User should be on the login page
     When User should input "eddiem@kraft.com" and "eddiem12"

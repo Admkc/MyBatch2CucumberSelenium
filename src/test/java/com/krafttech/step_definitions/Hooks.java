@@ -11,8 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
     /**
+     * Her scenariodan önce ve sonra mutlaka çalışır
      * Senaryolara “hooks” denilen yöntemler ile öncesinde/sonrasında çalışacak kodlar ekleyebiliyorsunuz.
      TDD’deki setup/teardown veya @Before/@After olarak işaretlenmiş methodlar gibi.
+
 
      */
     @Before

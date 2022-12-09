@@ -1,3 +1,9 @@
+CukesRunner -->
+Komutan, testlerin koşulduğu, faeture files ile stepdefs arasındaki  bağlantıyı sağlayan class
+
+StepDefinitions -->
+features filedaki her bir step bir methoda karşılık gelir ve burada bulunur
+
 @RunWith annotation bir JUnit annotationıdır.
  Cucumber classı Cucumber.api.junit package içerisindedir ve
  @RunWith annotationı Cucumber classı kullanarak koşar.
@@ -20,7 +26,7 @@ Cucumber feature fileda bulunan bazı önemli bilgilerin koşum için kullanıld
 Cukes Runner icinde "json:target/cucumber.json dan" plugini
 ve
 pom xlm e indirdigimiz 2 tane pluginden raporumuzu olusturuyoruz.
-Maven dan lifecyle dan verify ederek testimizi calisririyoruz ve
+Maven dan lifecyle dan verify ederek testimizi calistiriyoruz ve
 raporumuz target altında olusuyor.
 
 

@@ -70,6 +70,10 @@ public abstract class BasePage {
         return Driver.get().findElement(By.xpath("//span[.='"+accountName+"']")).getText();
     }
 
+    public String getWarningMessageText(String message){
+        return Driver.get().findElement(By.xpath("//*[contains(text(),'"+message+"')]")).getText();
+    }
+
 
 
 
