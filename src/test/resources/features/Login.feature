@@ -40,13 +40,14 @@ Feature: Krafttech Log in Test
     Then User should be on home page
 
 
-
+  @efecik
   Scenario: Login as a given user
     Then User should input following credentials
 
       | email    | user22@test.com |
       | password | Test123456      |
       | Name     | User22          |
+
 
   Scenario Outline: Data table and scenario outline
     Then User should input following credentials

@@ -79,6 +79,9 @@ public class ProfilePage extends BasePage {
     @FindBy(xpath = "//a[@class='nav-link collapsed']")
     public List<WebElement> profileOptions;
 
+    @FindBy(xpath = "//li[@class='nav-item dropdown']")
+    public List<WebElement> profilOp_loc;
+
 
     public void profileTabs(String tabName){
         driver= Driver.get();
