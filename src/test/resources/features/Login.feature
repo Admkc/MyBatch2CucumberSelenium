@@ -16,7 +16,7 @@ Feature: Krafttech Log in Test
     When The user enters Sebastian credentials
     Then The user should be able to login
 
-  @developer @db
+
   Scenario: Login as Jhon Nash
 
     When The user enters Jhon Nash credentials
@@ -28,13 +28,13 @@ Feature: Krafttech Log in Test
     When The user enters Rosa credentials
     Then The user should be able to login
 
-
+@sss
   Scenario: User should be abe to login with valid credentials
 
     When User should input login information
     Then User should be on home page
 
-
+  @parelel71
   Scenario: Login with parameters
     When User should input "user22@test.com" and "Test123456"
     Then User should be on home page
