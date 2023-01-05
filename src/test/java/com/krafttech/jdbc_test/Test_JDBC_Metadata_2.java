@@ -18,6 +18,7 @@ public class Test_JDBC_Metadata_2 {
             ResultSetMetaData metaData = resultSet.getMetaData();
             System.out.println("metaData.getColumnCount() = " + metaData.getColumnCount());
 
+         //   getColumnCount() u kullanarak ilk satırın degerlerini getirme
 //            for (int i = 1; i <= metaData.getColumnCount(); i++) {
 //                System.out.println("1.row "+i+"'nci columndaki değer--A>" + resultSet.getString(i));
 //            }
@@ -26,6 +27,9 @@ public class Test_JDBC_Metadata_2 {
                 System.out.print(metaData.getColumnName(i)+"\t");
             }
             System.out.println();
+
+            //getColumnCount() u kullanarak bütün satırları alt alta yazdırma
+
             while(resultSet.next()){
                 for (int i = 1; i <= metaData.getColumnCount(); i++) {
                     System.out.print(resultSet.getString(i)+"\t");
