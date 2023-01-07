@@ -16,10 +16,10 @@ public class Test_JCDB_Day2 {
             Statement statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
             ResultSet resultSet=statement.executeQuery(query);
             System.out.println("Connection is on");
-
-            resultSet.close();
-            statement.close();
-            connection.close();
+//
+//            resultSet.close();
+//            statement.close();
+//            connection.close();
 
 //            System.out.println("resultSet.getString(8) = " + resultSet.getString(8));
 //            resultSet.next();
@@ -49,7 +49,7 @@ public class Test_JCDB_Day2 {
 //            }
 
 //            while  (resultSet.next()){
-//                System.out.println(resultSet.getString(1)+"-->"+resultSet.getString(3));
+//                System.out.println(resultSet.getString(1)+"-->"+resultSet.getString(2));
 //            }
 
 //            resultSet.next();

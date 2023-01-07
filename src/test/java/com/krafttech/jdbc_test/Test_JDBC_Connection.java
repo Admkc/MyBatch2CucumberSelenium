@@ -10,6 +10,8 @@ public class Test_JDBC_Connection {
         String password ="VolkanAntalya159*";
         String query="select TOP(10) * from u0583688_vlk.dbo.otomobil_fiyatlari of2";
 
+
+
         try{
 
             Connection connection = DriverManager.getConnection(url,userName,password);

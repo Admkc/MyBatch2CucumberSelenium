@@ -17,6 +17,7 @@ public class Twst_JDBC_MetaData {
             ResultSet resultSet=statement.executeQuery(query);
 
             ResultSetMetaData metaData=resultSet.getMetaData();
+
             System.out.println("metaData.getColumnCount() = " + metaData.getColumnCount());
 
             System.out.println("metaData.getColumnName(1) = " + metaData.getColumnName(1));

@@ -19,6 +19,7 @@ public class Test_JDBC_2 {
             resultSet.next();
 
             System.out.println("resultSet.getString(1) = " + resultSet.getString(1));
+
             System.out.println(resultSet.getRow()+" | "+resultSet.getString(1));
             System.out.println("resultSet.getString(marka) = " + resultSet.getString("marka"));
             resultSet.next();

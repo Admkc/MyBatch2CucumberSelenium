@@ -5,6 +5,7 @@ import java.sql.*;
 public class karalama {
 
     public static void main(String[] args) throws SQLException {
+
         String url = "jdbc:sqlserver://94.73.150.3:1433;DatabaseName=u0583688_vlk;encrypt=true;trustServerCertificate=true;";
         String userName = "u0583688_vlk";
         String password ="VolkanAntalya159*";
